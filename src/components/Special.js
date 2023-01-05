@@ -1,6 +1,6 @@
 function Special(props) {
     return (
-        <section className={'special-card-content'} style={{width: '300px', margin: '15px'}}>
+        <section style={{width: '300px', margin: '15px'}}>
             <section style={{height: '250px'}}>
                 <img src={props.special.src} width={'300px'} height={'250px'} style={{borderRadius: '16px 16px 0 0'}}/>
             </section>

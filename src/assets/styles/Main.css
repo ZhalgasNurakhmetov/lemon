@@ -60,18 +60,57 @@
 @media (min-width: 701px) {
     .special-card-layout {
         display: flex;
-        justify-content: center;
+        overflow-x: auto;
     }
-}
-
-.special-card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .special-card-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .recommendation-layout {
+        background-color: #495e57;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 701px) {
+    .recommendation-layout {
+        background-color: #495e57;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 700px) {
+    .recommendation-card-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 701px) {
+    .recommendation-card-layout {
+        display: flex;
+        overflow-x: auto;
+    }
+}
+
+.testimonial-card {
+    width: 250px;
+    background-color: #edefee;
+    margin: 15px;
+    padding: 30px;
+}
+
+.testimonial-header {
+    display: flex;
     align-items: center;
 }
