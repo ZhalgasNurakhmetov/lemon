@@ -46,7 +46,7 @@ function Highlight() {
 
     const specialList = specials.map(item => <Special special={{title: item.title, price: item.price, src: item.src, description: item.description}}/>)
     return (
-        <section className={'highlight-layout'}>
+        <section id="menu" className={'highlight-layout'} style={{marginTop: '140px'}}>
             <section style={{display: 'flex', justifyContent: 'space-around'}}>
                 <h2 style={{margin: 0}}>This weeks specials!</h2>
                 <YellowButton title={'Online Menu'} link={''}/>

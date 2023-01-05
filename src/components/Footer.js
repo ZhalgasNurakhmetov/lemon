@@ -9,8 +9,8 @@ function Footer() {
                 <h5>Doormant navigation</h5>
                 <ul>
                     <li className={'description'}><Link to="/">Home</Link></li>
-                    <li className={'description'}><a href="#">About</a></li>
-                    <li className={'description'}><a href="#">Menu</a></li>
+                    <li className={'description'}><a href="#about">About</a></li>
+                    <li className={'description'}><a href="#menu">Menu</a></li>
                     <li className={'description'}><Link to="/booking">Reservations</Link></li>
                     <li className={'description'}><a href="#">Order Online</a></li>
                     <li className={'description'}><a href="#">Login</a></li>

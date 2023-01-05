@@ -37,7 +37,7 @@ const recommendations = [
 function Recommendation() {
     const recommendationList = recommendations.map(item => <Testimonial testimonial={{rating: item.rating, name: item.name, feedback: item.feedback, image: item.image}}/>)
     return (
-      <section className={'recommendation-layout'}>
+      <section className={'recommendation-layout green-back'} style={{marginTop: '50px'}}>
           <section style={{display: 'flex', justifyContent: 'center'}}>
               <h2 className={'white'} style={{margin: 0}}>Recent recommendations!</h2>
           </section>

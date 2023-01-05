@@ -3,7 +3,7 @@ import cooking from '../assets/cooking.jpg';
 
 function Hero() {
     return (
-        <section className={'hero-layout'}>
+        <section className={'hero-layout green-back'}>
             <section style={{width: '40%', padding: '50px'}}>
                 <h1 className={'yellow'}>Little Lemon</h1>
                 <h4 className={'card-title white'}>Chicago</h4>
@@ -14,8 +14,8 @@ function Hero() {
                 </p>
                 <YellowButton title={'Reserve a Table'} link={'/booking'}/>
             </section>
-            <section style={{display: 'flex', alignItems: 'end'}}>
-                <img src={cooking} width={'250px'} height={'350px'} className={'hero-img'}/>
+            <section style={{position: 'relative'}}>
+                <img src={cooking} width={'350px'} height={'400px'} className={'hero-img'} style={{position: 'relative', top: '90px'}}/>
             </section>
         </section>
     )
