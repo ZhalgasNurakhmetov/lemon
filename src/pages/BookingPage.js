@@ -1,8 +1,8 @@
-function BookingPage() {
+import BookingForm from "../components/BookingForm";
+
+function BookingPage(props) {
     return (
-        <>
-            <div>booking</div>
-        </>
+        <BookingForm availableTimes={props.availableTimes} setAvailableTimes={props.setAvailableTimes} submitForm={props.submitForm}/>
     )
 }
 

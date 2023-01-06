@@ -8,8 +8,8 @@ function Nav () {
                 <li className={'menu-item'}><a href="#about">About</a></li>
                 <li className={'menu-item'}><a href="#menu">Menu</a></li>
                 <li className={'menu-item'}><Link to="/booking">Reservations</Link></li>
-                <li className={'menu-item'}><a href="#">Order Online</a></li>
                 <li className={'menu-item'}><a href="#">Login</a></li>
+                <li className={'menu-item'}><a className={'green-back white'} style={{borderRadius: '16px'}} href="#">Order Online</a></li>
             </ul>
         </nav>
     );
