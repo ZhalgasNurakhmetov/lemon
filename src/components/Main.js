@@ -1,13 +1,18 @@
 import HomePage from "../pages/HomePage";
 import {Route, Routes, useNavigate} from "react-router-dom";
 import BookingPage from "../pages/BookingPage";
-import {useReducer} from "react";
+import {useEffect, useReducer} from "react";
 import {fetchAPI, submitAPI} from "../api";
 import ConfirmedBookingPage from "../pages/ConfirmedBookingPage";
 
 export function Main() {
     const [availableTimes, setAvailableTimes] = useReducer(updateTimes, initializeTimes());
     const navigate = useNavigate();
+    let reservations;
+
+    useEffect(() => {
+        reservations = JSON.parse(localStorage.getItem('reservations'));
+    });
 
     function fetchData(date) {
         return fetchAPI(date);
@@ -26,6 +31,14 @@ export function Main() {
         if (isSuccessful) {
             navigate("/confirmed");
         }
+        const indexedFormData = !reservations ? {
+            id: 1,
+            ...formData,
+        } : {
+            id: reservations.length + 1,
+            ...formData,
+        }
+        localStorage.setItem('reservations', JSON.stringify(reservations ? [...reservations, indexedFormData] : [indexedFormData]));
     }
 
     return (

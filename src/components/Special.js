@@ -1,6 +1,6 @@
 function Special(props) {
     return (
-        <section style={{width: '300px', margin: '15px'}}>
+        <section className={'special'} style={{width: '300px', margin: '15px'}}>
             <section style={{height: '250px'}}>
                 <img src={props.special.src} width={'300px'} height={'250px'} style={{borderRadius: '16px 16px 0 0'}}/>
             </section>
@@ -11,7 +11,7 @@ function Special(props) {
                 </section>
                 <section style={{padding: '15px'}}>
                     <p className={'description black'}>{props.special.description}</p>
-                    <p className={'footer-card'}>Order a delivery</p>
+                    <p className={'footer-card'} style={{cursor: 'pointer'}}>Order a delivery <i className={"bi bi-bicycle"}></i></p>
                 </section>
             </section>
         </section>

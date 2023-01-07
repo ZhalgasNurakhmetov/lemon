@@ -44,7 +44,7 @@ function Recommendation() {
     return (
       <section className={'recommendation-layout green-back'} style={{marginTop: '50px'}}>
           <section style={{display: 'flex', justifyContent: 'center'}}>
-              <h2 className={'white'} style={{margin: 0}}>Recent recommendations!</h2>
+              <h2 className={'white'}>Recent recommendations!</h2>
           </section>
           <section className={'recommendation-card-layout'}>
               {recommendationList}

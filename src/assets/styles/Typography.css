@@ -1,7 +1,13 @@
 /*in specials card description*/
-p.description, li.description {
+p.description {
     font-size: 16pt;
     line-height: 1.5;
+}
+
+li.description {
+    font-size: 16pt;
+    line-height: 1.5;
+    margin: 5px 0;
 }
 
 h1 {
@@ -22,7 +28,7 @@ p.lead-text {
 
 /*Menu items*/
 .menu-item {
-    font-size: 20pt;
+    font-size: 18pt;
     font-weight: bold;
     text-transform: uppercase;
 }
